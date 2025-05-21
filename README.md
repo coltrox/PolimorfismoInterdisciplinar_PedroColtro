@@ -73,7 +73,7 @@ Compilar os arquivos (caso esteja no terminal):
 
 Navegar pelo menu interativo para criar objetos dos diferentes temas.
 <br><br>
-💡 Exemplos de Uso
+## 💡 Exemplos de Uso
 
 Escolher um bioma e ver a descrição e o clima.
 
@@ -81,7 +81,7 @@ Calcular a área de figuras com valores inseridos pelo usuário.
 
 Explorar os três estados da matéria com exemplos práticos.
 
-📚 Conceitos Aplicados
+## 📚 Conceitos Aplicados
 Herança e polimorfismo
 
 Classes e métodos abstratos
