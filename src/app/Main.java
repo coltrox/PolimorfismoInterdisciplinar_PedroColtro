@@ -1,5 +1,6 @@
 package app;
 
+// Importa todas as classes necessárias
 import model.bioma.*;
 import model.geometria.*;
 import model.estado_materia.*;
@@ -10,10 +11,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // Lista para armazenar todos os objetos
         List<Object> objetos = new ArrayList<>();
         String opcao;
 
+        
         do {
+            // Exibe o menu principal
             System.out.println("\n===== Menu Principal =====");
             System.out.println("1 - Biomas (Geografia)");
             System.out.println("2 - Figuras Geométricas (Matemática)");
@@ -21,38 +25,46 @@ public class Main {
             System.out.println("0 - Sair");
             opcao = Utils.lerString("Escolha uma opção: ");
 
+            // opção escolhida
             switch (opcao) {
                 case "1":
+                    // Usuário escolheu Biomas
                     Bioma bioma = escolherBioma();
                     bioma.descricao();
                     bioma.clima();
-                    objetos.add(bioma);
+                    objetos.add(bioma); // Armazena o objeto na lista
                     break;
                 case "2":
+                    // Usuário escolheu Figuras Geométricas
                     FiguraGeometrica figura = escolherFigura();
                     figura.descricao();
                     System.out.println("Área: " + figura.calcularArea());
-                    objetos.add(figura);
+                    objetos.add(figura); // Armazena o objeto na lista
                     break;
                 case "3":
+                    // Usuário escolheu Estados da Matéria
                     EstadoMateria estado = escolherEstado();
                     estado.caracteristicas();
                     estado.exemplo();
-                    objetos.add(estado);
+                    objetos.add(estado); // Armazena o objeto na lista
                     break;
                 case "0":
+                    // Finaliza o programa
                     System.out.println("Saindo...");
                     break;
                 default:
+                    // Entrada inválida
                     System.out.println("Opção inválida.");
             }
 
-        } while (!opcao.equals("0"));
+        } while (!opcao.equals("0")); // Repete até o usuário escolher sair
 
+        // Exibe os tipos dos objetos criados durante a execução
         System.out.println("\n=== Objetos Criados ===");
         objetos.forEach(obj -> System.out.println(obj.getClass().getSimpleName()));
     }
 
+    // criar e retornar um bioma com base na entrada do usuário
     public static Bioma escolherBioma() {
         String tipo = Utils.lerString("Digite o tipo (floresta, tundra, deserto): ").toLowerCase();
         String pais = Utils.lerString("Digite o país do bioma: ");
@@ -66,6 +78,7 @@ public class Main {
         }
     }
 
+    // criar e retornar uma figura geométrica com base na entrada
     public static FiguraGeometrica escolherFigura() {
         String tipo = Utils.lerString("Digite a figura (quadrado, triangulo, circulo): ").toLowerCase();
         switch (tipo) {
@@ -85,6 +98,7 @@ public class Main {
         }
     }
 
+    // criar e retornar um estado da matéria com base na entrada
     public static EstadoMateria escolherEstado() {
         String tipo = Utils.lerString("Digite o estado (solido, liquido, gasoso): ").toLowerCase();
         switch (tipo) {
