@@ -1,138 +1,86 @@
-🌍 Projeto Interdisciplinar - Polimorfismo em Java
-🚀 Sobre o Projeto
-Este projeto foi desenvolvido com o objetivo de aplicar os conceitos fundamentais de Programação Orientada a Objetos (POO) — com foco em polimorfismo, herança, abstração e encapsulamento — de forma interdisciplinar, utilizando temas das disciplinas de Geografia, Matemática e Ciências.
+# 🌍 Projeto Educacional Multidisciplinar
 
-O programa permite que o usuário interaja de forma dinâmica, selecionando temas, fornecendo informações e visualizando os dados através de uma aplicação em Java orientada a objetos.
+[![Java](https://img.shields.io/badge/language-Java-orange.svg)](https://www.java.com/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+[![Author](https://img.shields.io/badge/autor-seu_nome-aqua.svg)]()
 
-🌟 Temas Abordados
-📍 Geografia: Biomas do Mundo
-Classe Abstrata: Bioma
+> Projeto educativo para aplicação prática de **POO em Java**, integrando conceitos de **Geografia**, **Matemática** e **Ciências**.
 
-Subclasses: Floresta, Deserto, Tundra
+---
 
-Cada subclasse representa um tipo de bioma, com sua definição e exemplos específicos.
+## 🖼️ Preview
 
-🔺 Matemática: Figuras Geométricas
-Classe Abstrata: FiguraGeometrica
+<img src="https://i.imgur.com/E7oCz7U.png" alt="Exemplo de execução no console" width="600"/>
 
-Subclasses: Circulo, Quadrado, Triangulo
+> *Exemplo da interface de linha de comando do projeto.*
 
-O usuário fornece dimensões, e o programa calcula área e perímetro de acordo com a figura selecionada.
+---
 
-🔬 Ciências: Estados Físicos da Matéria
-Classe Abstrata: EstadoMateria
+## 🧠 Temas Abordados
 
-Subclasses: Solido, Liquido, Gasoso
+| Área         | Conteúdo                                                                 |
+|--------------|--------------------------------------------------------------------------|
+| Geografia    | Biomas (Floresta, Tundra, Deserto) e seus climas                         |
+| Matemática   | Cálculo de área de figuras geométricas: quadrado, triângulo e círculo    |
+| Ciências     | Estados da matéria: sólido, líquido e gasoso com características e exemplos |
 
-Cada estado apresenta suas propriedades específicas, como forma e volume, de forma interativa e didática.
+---
 
-🏛️ Modelagem Orientada a Objetos
-📦 Pacote	🗂️ Classe Base	🏗️ Subclasses
-model.bioma	Bioma	Floresta, Deserto, Tundra
-model.geometria	FiguraGeometrica	Circulo, Quadrado, Triangulo
-model.estado_materia	EstadoMateria	Solido, Liquido, Gasoso
+## 🧱 Estrutura do Projeto
 
-✔️ Todas as classes possuem pelo menos 2 métodos abstratos polimórficos, implementados de formas distintas nas subclasses.
+src/
+├── app/ # Classe principal com menu interativo
+├── model/
+│ ├── bioma/ # Biomas: Floresta, Tundra, Deserto
+│ ├── geometria/ # Figuras: Quadrado, Triângulo, Círculo
+│ └── estado_materia/ # Estados da matéria: Sólido, Líquido, Gasoso
+└── util/ # Leitura de dados do usuário (Utils)
 
 
-🧠 Funcionalidades
-✅ Menu interativo com os três temas.
+---
 
-✅ Entrada dinâmica de dados do usuário.
+## 🚀 Como Executar
 
-✅ Validação de entrada e tratamento de erros.
+### ✅ Requisitos:
+- Java JDK 8 ou superior
+- Terminal ou IDE (Eclipse, IntelliJ, VSCode)
 
-✅ Sugestões automáticas de países para biomas.
+### 📥 Clonar o repositório:
+```bash
+git clone https://github.com/seu-usuario/projeto-multidisciplinar.git
+cd projeto-multidisciplinar
 
-✅ Cálculo de área e perímetro de figuras geométricas.
-
-✅ Definição e exemplos dos estados físicos da matéria.
-
-✅ Uso real de polimorfismo, com métodos sobrescritos nas subclasses.
-
-✅ Armazenamento dos objetos em listas dinâmicas.
-
-✅ Exibição detalhada dos dados de cada objeto criado.
-
-🎯 Exemplo de Execução
-yaml
-Copiar
-Editar
-=== MENU PRINCIPAL ===
-Escolha uma categoria:
-1 - Biomas (Geografia)
-2 - Figuras Geométricas (Matemática)
-3 - Estados da Matéria (Ciências)
-4 - Sair
-Opção: 1
-
---- Cadastro de Bioma ---
-Sugestões de países para Floresta: Brasil, Canadá, Indonésia, Congo
-Digite o nome do bioma: Amazônia
-Digite o país: Brasil
-
-Bioma cadastrado com sucesso!
-Definição: Área com grande concentração de árvores e biodiversidade.
-Exemplo: A Floresta Amazônica no Brasil.
-
---- Listagem dos Biomas Cadastrados ---
-Bioma: Floresta - Amazônia no Brasil
-🏃‍♂️ Como Executar
-✔️ Pré-requisitos:
-Java JDK instalado (versão 11 ou superior).
-
-IDE recomendada: IntelliJ, Eclipse, VS Code ou terminal com compilador.
-
-🚦 Passos:
-Clone o repositório:
-
+⚙️ Compilar o projeto:
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/POLIMORFISMO_INTERDISCIPLINAR.git
-Acesse a pasta do projeto:
-
+javac app/Main.java
+▶️ Executar:
 bash
 Copiar
 Editar
-cd POLIMORFISMO_INTERDISCIPLINAR
-Compile o projeto:
+java app.Main
+💡 Funcionalidades
+Menu interativo via console
 
-bash
-Copiar
-Editar
-javac -d bin src/**/*.java
-Execute:
+Entrada de dados com validação
 
-bash
-Copiar
-Editar
-java -cp bin app.Main
-✔️ O programa irá abrir o menu interativo no terminal.
+Herança e polimorfismo aplicados a temas reais
 
-📜 Tecnologias Utilizadas
-☕ Java (linguagem principal)
+Listagem de objetos criados dinamicamente
 
-💡 Programação Orientada a Objetos
+🛠️ Tecnologias Utilizadas
+Java 8+
 
-🔧 Execução via terminal ou qualquer IDE Java
+Programação Orientada a Objetos
 
-📂 Organização modular e profissional
+Paradigma console-based (CLI)
 
-🔥 Diferenciais do Projeto
-🏆 Código limpo, comentado e organizado.
+📘 Licença
+Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-🔄 Menu com loop interativo até o usuário desejar sair.
-
-🛠️ Tratamento de exceções e validações robustas.
-
-🗺️ Abordagem interdisciplinar aplicando conceitos de três áreas do conhecimento.
-
-🤝 Contribuições
-Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias!
-
-📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
-
-👨‍💻 Autor
-Desenvolvido por [Seu Nome Aqui] como parte de uma atividade interdisciplinar de Programação Orientada a Objetos, integrando conceitos de Geografia, Matemática e Ciências.
+✍️ Autor
+Desenvolvido por Seu Nome Aqui
+📧 seu.email@exemplo.com
+🌐 linkedin.com/in/seu-perfil
