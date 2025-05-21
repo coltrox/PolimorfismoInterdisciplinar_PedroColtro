@@ -72,7 +72,7 @@ Compilar os arquivos (caso esteja no terminal):
 ```
 
 Navegar pelo menu interativo para criar objetos dos diferentes temas.
-
+<br><br>
 💡 Exemplos de Uso
 
 Escolher um bioma e ver a descrição e o clima.
