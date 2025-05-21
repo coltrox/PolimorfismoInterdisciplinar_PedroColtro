@@ -1,86 +1,107 @@
 # 🌍 Projeto Educacional Multidisciplinar
 
-[![Java](https://img.shields.io/badge/language-Java-orange.svg)](https://www.java.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
-[![Author](https://img.shields.io/badge/autor-seu_nome-aqua.svg)]()
-
-> Projeto educativo para aplicação prática de **POO em Java**, integrando conceitos de **Geografia**, **Matemática** e **Ciências**.
-
----
-
-## 🖼️ Preview
-
-<img src="https://i.imgur.com/E7oCz7U.png" alt="Exemplo de execução no console" width="600"/>
-
-> *Exemplo da interface de linha de comando do projeto.*
-
----
+Este projeto foi desenvolvido com o objetivo de aplicar conceitos de **programação orientada a objetos (POO)** de forma multidisciplinar, abordando temas das áreas de **Geografia**, **Matemática** e **Ciências** por meio da modelagem e manipulação de objetos Java.
 
 ## 🧠 Temas Abordados
 
-| Área         | Conteúdo                                                                 |
-|--------------|--------------------------------------------------------------------------|
-| Geografia    | Biomas (Floresta, Tundra, Deserto) e seus climas                         |
-| Matemática   | Cálculo de área de figuras geométricas: quadrado, triângulo e círculo    |
-| Ciências     | Estados da matéria: sólido, líquido e gasoso com características e exemplos |
+- **Geografia**: Representação de biomas com suas características e climas.
+- **Matemática**: Cálculo da área de figuras geométricas como quadrado, triângulo e círculo.
+- **Ciências**: Estados físicos da matéria (sólido, líquido e gasoso), suas propriedades e exemplos.
 
----
+## 🧱 Estrutura e Modelagem
 
-## 🧱 Estrutura do Projeto
+O projeto é dividido em pacotes organizados conforme o tema:
 
 src/
-├── app/ # Classe principal com menu interativo
+├── app/ # Classe Main (menu principal)
 ├── model/
-│ ├── bioma/ # Biomas: Floresta, Tundra, Deserto
-│ ├── geometria/ # Figuras: Quadrado, Triângulo, Círculo
-│ └── estado_materia/ # Estados da matéria: Sólido, Líquido, Gasoso
-└── util/ # Leitura de dados do usuário (Utils)
+│ ├── bioma/ # Classes Bioma, Floresta, Tundra, Deserto
+│ ├── geometria/ # Classes FiguraGeometrica, Quadrado, Triangulo, Circulo
+│ └── estado_materia/ # Classes EstadoMateria, Solido, Liquido, Gasoso
+└── util/ # Classe Utils para entrada do usuário
 
+perl
+Copiar
+Editar
+
+### 🧭 Pacote `model.bioma`
+
+Contém a classe abstrata `Bioma` e suas subclasses:
+- `Floresta`
+- `Tundra`
+- `Deserto`
+
+Cada bioma possui descrição e informações sobre o clima, com uso de polimorfismo.
+
+### 📐 Pacote `model.geometria`
+
+Contém a classe abstrata `FiguraGeometrica` e subclasses:
+- `Quadrado`
+- `Triangulo`
+- `Circulo`
+
+Cada figura implementa o cálculo de área e fornece uma descrição.
+
+### 🔬 Pacote `model.estado_materia`
+
+Classe abstrata `EstadoMateria` e subclasses:
+- `Solido`
+- `Liquido`
+- `Gasoso`
+
+Cada classe define as características físicas e dá um exemplo.
+
+### 🛠 Pacote `util`
+
+A classe `Utils` facilita a leitura de entradas do usuário com tratamento de erros.
 
 ---
 
-## 🚀 Como Executar
+## ▶️ Instruções de Execução
 
-### ✅ Requisitos:
-- Java JDK 8 ou superior
-- Terminal ou IDE (Eclipse, IntelliJ, VSCode)
+1. **Pré-requisitos:**
+   - Java JDK 8 ou superior
+   - IDE (Eclipse, IntelliJ, VSCode) ou terminal com compilador `javac`
 
-### 📥 Clonar o repositório:
+2. **Clonar o projeto:**
+
 ```bash
 git clone https://github.com/seu-usuario/projeto-multidisciplinar.git
 cd projeto-multidisciplinar
+Compilar os arquivos (caso esteja no terminal):
 
-⚙️ Compilar o projeto:
 bash
 Copiar
 Editar
 javac app/Main.java
-▶️ Executar:
+Executar o programa:
+
 bash
 Copiar
 Editar
 java app.Main
-💡 Funcionalidades
-Menu interativo via console
+Navegar pelo menu interativo para criar objetos dos diferentes temas.
 
-Entrada de dados com validação
+💡 Exemplos de Uso
+Escolher um bioma e ver a descrição e o clima.
 
-Herança e polimorfismo aplicados a temas reais
+Calcular a área de figuras com valores inseridos pelo usuário.
 
-Listagem de objetos criados dinamicamente
+Explorar os três estados da matéria com exemplos práticos.
 
-🛠️ Tecnologias Utilizadas
-Java 8+
+📚 Conceitos Aplicados
+Herança e polimorfismo
 
-Programação Orientada a Objetos
+Classes e métodos abstratos
 
-Paradigma console-based (CLI)
+Encapsulamento
 
-📘 Licença
-Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
+Modularização de código
 
-✍️ Autor
-Desenvolvido por Seu Nome Aqui
-📧 seu.email@exemplo.com
-🌐 linkedin.com/in/seu-perfil
+Tratamento de exceções com try-catch
+
+Interação via console
+
+📌 Autor
+Seu Nome Aqui
+Projeto educacional desenvolvido como prática de Programação Orientada a Objetos em Java.
