@@ -94,5 +94,5 @@ Tratamento de exceções com try-catch
 
 Interação via console
 
-##📌 Autores <br>
+## 📌 Autores
 PEDRO COLTRO | MYLENNA PONCIANO | LUCAS DÁVILA
