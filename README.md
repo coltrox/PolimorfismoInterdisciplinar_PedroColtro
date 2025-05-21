@@ -1,165 +1,104 @@
-🌍 Projeto Interdisciplinar - Polimorfismo em Java
-🚀 Sobre o Projeto
-Este projeto foi desenvolvido com o objetivo de aplicar os conceitos fundamentais de Programação Orientada a Objetos (POO) — com foco em polimorfismo, herança, abstração e encapsulamento — de forma interdisciplinar, utilizando temas das disciplinas de Geografia, Matemática e Ciências.
+# 🌍 Projeto Educacional Multidisciplinar
 
-O programa permite que o usuário interaja de forma dinâmica, selecionando temas, fornecendo informações e visualizando os dados através de uma aplicação em Java orientada a objetos.
+Este projeto foi desenvolvido com o objetivo de aplicar conceitos de **programação orientada a objetos (POO)** de forma multidisciplinar, abordando temas das áreas de **Geografia**, **Matemática** e **Ciências** por meio da modelagem e manipulação de objetos Java.
 
-🌟 Temas Abordados
-📍 Geografia: Biomas do Mundo
-Classe Abstrata: Bioma
+## 🧠 Temas Abordados
 
-Subclasses: Floresta, Deserto, Tundra
+- **Geografia**: Representação de biomas com suas características e climas.
+- **Matemática**: Cálculo da área de figuras geométricas como quadrado, triângulo e círculo.
+- **Ciências**: Estados físicos da matéria (sólido, líquido e gasoso), suas propriedades e exemplos.
 
-Cada subclasse representa um tipo de bioma, com sua definição e exemplos específicos.
+## 🧱 Estrutura e Modelagem
 
-🔺 Matemática: Figuras Geométricas
-Classe Abstrata: FiguraGeometrica
+O projeto é dividido em pacotes organizados conforme o tema:
 
-Subclasses: Circulo, Quadrado, Triangulo
+src/<br>
+├──  app/  Classe Main (menu principal) <br>
+├──  model/<br>
+│  ├──   bioma/  Classes Bioma, Floresta, Tundra, Deserto <br>
+│  ├──   geometria/  Classes FiguraGeometrica, Quadrado, Triangulo, Circulo <br>
+│  └──   estado_materia/  Classes EstadoMateria, Solido, Liquido, Gasoso <br>
+└──   util/  Classe Utils para entrada do usuário <br>
 
-O usuário fornece dimensões, e o programa calcula área e perímetro de acordo com a figura selecionada.
 
-🔬 Ciências: Estados Físicos da Matéria
-Classe Abstrata: EstadoMateria
+### 🧭 Pacote `model.bioma`
 
-Subclasses: Solido, Liquido, Gasoso
+Contém a classe abstrata `Bioma` e suas subclasses:
+- `Floresta`
+- `Tundra`
+- `Deserto`
 
-Cada estado apresenta suas propriedades específicas, como forma e volume, de forma interativa e didática.
+Cada bioma possui descrição e informações sobre o clima, com uso de polimorfismo.
 
-🏛️ Modelagem Orientada a Objetos
-📦 Pacote	🗂️ Classe Base	🏗️ Subclasses
-model.bioma	Bioma	Floresta, Deserto, Tundra
-model.geometria	FiguraGeometrica	Circulo, Quadrado, Triangulo
-model.estado_materia	EstadoMateria	Solido, Liquido, Gasoso
+### 📐 Pacote `model.geometria`
 
-✔️ Todas as classes possuem pelo menos 2 métodos abstratos polimórficos, implementados de formas distintas nas subclasses.
+Contém a classe abstrata `FiguraGeometrica` e subclasses:
+- `Quadrado`
+- `Triangulo`
+- `Circulo`
 
-🗂️ Estrutura de Pastas
-bash
-Copiar
-Editar
-POLIMORFISMO_INTERDISCIPLINAR/
-├── src/
-│   ├── app/                        # Classe principal (Main)
-│   │   └── Main.java
-│   ├── model/                      # Modelagem dos temas
-│   │   ├── bioma/
-│   │   │   ├── Bioma.java
-│   │   │   ├── Deserto.java
-│   │   │   ├── Floresta.java
-│   │   │   └── Tundra.java
-│   │   ├── estado_materia/
-│   │   │   ├── EstadoMateria.java
-│   │   │   ├── Gasoso.java
-│   │   │   ├── Liquido.java
-│   │   │   └── Solido.java
-│   │   └── geometria/
-│   │       ├── FiguraGeometrica.java
-│   │       ├── Circulo.java
-│   │       ├── Quadrado.java
-│   │       └── Triangulo.java
-│   └── util/
-│       └── Utils.java               # Classe auxiliar
-└── README.md                        # Documentação
+Cada figura implementa o cálculo de área e fornece uma descrição.
 
-🧠 Funcionalidades
-✅ Menu interativo com os três temas.
+### 🔬 Pacote `model.estado_materia`
 
-✅ Entrada dinâmica de dados do usuário.
+Classe abstrata `EstadoMateria` e subclasses:
+- `Solido`
+- `Liquido`
+- `Gasoso`
 
-✅ Validação de entrada e tratamento de erros.
+Cada classe define as características físicas e dá um exemplo.
 
-✅ Sugestões automáticas de países para biomas.
+### 🛠 Pacote `util`
 
-✅ Cálculo de área e perímetro de figuras geométricas.
+A classe `Utils` facilita a leitura de entradas do usuário com tratamento de erros.
 
-✅ Definição e exemplos dos estados físicos da matéria.
+---
 
-✅ Uso real de polimorfismo, com métodos sobrescritos nas subclasses.
+## ▶️ Instruções de Execução
 
-✅ Armazenamento dos objetos em listas dinâmicas.
+1. **Pré-requisitos:**
+   - Java JDK 8 ou superior
+   - IDE (Eclipse, IntelliJ, VSCode) ou terminal com compilador `javac`
 
-✅ Exibição detalhada dos dados de cada objeto criado.
+2. **Clonar o projeto:**
 
-🎯 Exemplo de Execução
-yaml
-Copiar
-Editar
-=== MENU PRINCIPAL ===
-Escolha uma categoria:
-1 - Biomas (Geografia)
-2 - Figuras Geométricas (Matemática)
-3 - Estados da Matéria (Ciências)
-4 - Sair
-Opção: 1
-
---- Cadastro de Bioma ---
-Sugestões de países para Floresta: Brasil, Canadá, Indonésia, Congo
-Digite o nome do bioma: Amazônia
-Digite o país: Brasil
-
-Bioma cadastrado com sucesso!
-Definição: Área com grande concentração de árvores e biodiversidade.
-Exemplo: A Floresta Amazônica no Brasil.
-
---- Listagem dos Biomas Cadastrados ---
-Bioma: Floresta - Amazônia no Brasil
-🏃‍♂️ Como Executar
-✔️ Pré-requisitos:
-Java JDK instalado (versão 11 ou superior).
-
-IDE recomendada: IntelliJ, Eclipse, VS Code ou terminal com compilador.
-
-🚦 Passos:
-Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/projeto-multidisciplinar.git
+cd projeto-multidisciplinar
+Compilar os arquivos (caso esteja no terminal):
 
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/POLIMORFISMO_INTERDISCIPLINAR.git
-Acesse a pasta do projeto:
+javac app/Main.java
+Executar o programa:
 
 bash
 Copiar
 Editar
-cd POLIMORFISMO_INTERDISCIPLINAR
-Compile o projeto:
+java app.Main
+Navegar pelo menu interativo para criar objetos dos diferentes temas.
 
-bash
-Copiar
-Editar
-javac -d bin src/**/*.java
-Execute:
+💡 Exemplos de Uso
+Escolher um bioma e ver a descrição e o clima.
 
-bash
-Copiar
-Editar
-java -cp bin app.Main
-✔️ O programa irá abrir o menu interativo no terminal.
+Calcular a área de figuras com valores inseridos pelo usuário.
 
-📜 Tecnologias Utilizadas
-☕ Java (linguagem principal)
+Explorar os três estados da matéria com exemplos práticos.
 
-💡 Programação Orientada a Objetos
+📚 Conceitos Aplicados
+Herança e polimorfismo
 
-🔧 Execução via terminal ou qualquer IDE Java
+Classes e métodos abstratos
 
-📂 Organização modular e profissional
+Encapsulamento
 
-🔥 Diferenciais do Projeto
-🏆 Código limpo, comentado e organizado.
+Modularização de código
 
-🔄 Menu com loop interativo até o usuário desejar sair.
+Tratamento de exceções com try-catch
 
-🛠️ Tratamento de exceções e validações robustas.
+Interação via console
 
-🗺️ Abordagem interdisciplinar aplicando conceitos de três áreas do conhecimento.
-
-🤝 Contribuições
-Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias!
-
-📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
-
-👨‍💻 Autor
-Desenvolvido por [Seu Nome Aqui] como parte de uma atividade interdisciplinar de Programação Orientada a Objetos, integrando conceitos de Geografia, Matemática e Ciências.
+📌 Autor
+Seu Nome Aqui
+Projeto educacional desenvolvido como prática de Programação Orientada a Objetos em Java.
