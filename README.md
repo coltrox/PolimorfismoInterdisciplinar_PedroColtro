@@ -65,9 +65,7 @@ A classe `Utils` facilita a leitura de entradas do usuário com tratamento de er
 git clone https://github.com/coltrox/PolimorfismoInterdisciplinar_PedroColtro.git
 cd PolimorfismoInterdisciplinar_PedroColtro
 Compilar os arquivos (caso esteja no terminal):
-
-Executar o programa:
-java app.Main
+```
 
 Navegar pelo menu interativo para criar objetos dos diferentes temas.
 
