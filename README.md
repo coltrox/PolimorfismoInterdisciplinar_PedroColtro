@@ -35,14 +35,11 @@ model.estado_materia	EstadoMateria	Solido, Liquido, Gasoso
 ✔️ Todas as classes possuem pelo menos 2 métodos abstratos polimórficos, implementados de formas distintas nas subclasses.
 
 🗂️ Estrutura de Pastas
-bash
-Copiar
-Editar
 POLIMORFISMO_INTERDISCIPLINAR/
 ├── src/
-│   ├── app/                        # Classe principal (Main)
+│   ├── app/                       # Classe principal
 │   │   └── Main.java
-│   ├── model/                      # Modelagem dos temas
+│   ├── model/                     # Modelagem dos temas
 │   │   ├── bioma/
 │   │   │   ├── Bioma.java
 │   │   │   ├── Deserto.java
@@ -58,9 +55,10 @@ POLIMORFISMO_INTERDISCIPLINAR/
 │   │       ├── Circulo.java
 │   │       ├── Quadrado.java
 │   │       └── Triangulo.java
-│   └── util/
-│       └── Utils.java               # Classe auxiliar
-└── README.md                        # Documentação
+│   └── util/                      # Classe auxiliar
+│       └── Utils.java
+├── README.md                      # Documentação do projeto
+
 
 🧠 Funcionalidades
 ✅ Menu interativo com os três temas.
