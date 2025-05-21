@@ -58,28 +58,21 @@ A classe `Utils` facilita a leitura de entradas do usuário com tratamento de er
 
 1. **Pré-requisitos:**
    - Java JDK 8 ou superior
-   - IDE (Eclipse, IntelliJ, VSCode) ou terminal com compilador `javac`
 
 2. **Clonar o projeto:**
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-multidisciplinar.git
-cd projeto-multidisciplinar
+git clone https://github.com/coltrox/PolimorfismoInterdisciplinar_PedroColtro.git
+cd PolimorfismoInterdisciplinar_PedroColtro
 Compilar os arquivos (caso esteja no terminal):
 
-bash
-Copiar
-Editar
-javac app/Main.java
 Executar o programa:
-
-bash
-Copiar
-Editar
 java app.Main
+
 Navegar pelo menu interativo para criar objetos dos diferentes temas.
 
 💡 Exemplos de Uso
+
 Escolher um bioma e ver a descrição e o clima.
 
 Calcular a área de figuras com valores inseridos pelo usuário.
@@ -100,5 +93,4 @@ Tratamento de exceções com try-catch
 Interação via console
 
 📌 Autor
-Seu Nome Aqui
-Projeto educacional desenvolvido como prática de Programação Orientada a Objetos em Java.
+PEDRO COLTRO | MYLENNA PONCIANO | LUCAS DÁVILA
