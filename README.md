@@ -12,13 +12,13 @@ Este projeto foi desenvolvido com o objetivo de aplicar conceitos de **programa�
 
 O projeto é dividido em pacotes organizados conforme o tema:
 
-src/
-├── app/ # Classe Main (menu principal)
-├── model/
-│ ├── bioma/ # Classes Bioma, Floresta, Tundra, Deserto
-│ ├── geometria/ # Classes FiguraGeometrica, Quadrado, Triangulo, Circulo
-│ └── estado_materia/ # Classes EstadoMateria, Solido, Liquido, Gasoso
-└── util/ # Classe Utils para entrada do usuário
+src/<br>
+├── app/ # Classe Main (menu principal)<br>
+├── model/<br>
+│ ├── bioma/ # Classes Bioma, Floresta, Tundra, Deserto<br>
+│ ├── geometria/ # Classes FiguraGeometrica, Quadrado, Triangulo, Circulo<br>
+│ └── estado_materia/ # Classes EstadoMateria, Solido, Liquido, Gasoso<br>
+└── util/ # Classe Utils para entrada do usuário<br>
 
 perl
 Copiar
