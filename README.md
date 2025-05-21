@@ -18,4 +18,4 @@ Utilizar conceitos de POO (Programação Orientada a Objetos) com polimorfismo r
 - Paradigma: Programação Orientada a Objetos
 
 ## Desenvolvido por:
-[Seu Nome]
+PEDRO COLTRO | LUCAS D'ÁVILA | MYLENNA PONCIANO
