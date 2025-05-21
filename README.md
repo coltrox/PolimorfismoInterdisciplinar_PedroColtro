@@ -34,31 +34,6 @@ model.estado_materia	EstadoMateria	Solido, Liquido, Gasoso
 
 ✔️ Todas as classes possuem pelo menos 2 métodos abstratos polimórficos, implementados de formas distintas nas subclasses.
 
-🗂️ Estrutura de Pastas
-POLIMORFISMO_INTERDISCIPLINAR/
-├── src/
-│   ├── app/                       # Classe principal
-│   │   └── Main.java
-│   ├── model/                     # Modelagem dos temas
-│   │   ├── bioma/
-│   │   │   ├── Bioma.java
-│   │   │   ├── Deserto.java
-│   │   │   ├── Floresta.java
-│   │   │   └── Tundra.java
-│   │   ├── estado_materia/
-│   │   │   ├── EstadoMateria.java
-│   │   │   ├── Gasoso.java
-│   │   │   ├── Liquido.java
-│   │   │   └── Solido.java
-│   │   └── geometria/
-│   │       ├── FiguraGeometrica.java
-│   │       ├── Circulo.java
-│   │       ├── Quadrado.java
-│   │       └── Triangulo.java
-│   └── util/                      # Classe auxiliar
-│       └── Utils.java
-├── README.md                      # Documentação do projeto
-
 
 🧠 Funcionalidades
 ✅ Menu interativo com os três temas.
