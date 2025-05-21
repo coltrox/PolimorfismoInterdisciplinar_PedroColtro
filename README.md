@@ -64,8 +64,10 @@ A classe `Utils` facilita a leitura de entradas do usuário com tratamento de er
 ```bash
 git clone https://github.com/coltrox/PolimorfismoInterdisciplinar_PedroColtro.git
 ```
+```bash
 cd PolimorfismoInterdisciplinar_PedroColtro
 ```
+```bash
 Compilar os arquivos (caso esteja no terminal):
 ```
 
