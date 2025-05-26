@@ -1,38 +1,28 @@
 package util;
 
-// Importa a classe Scanner 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Utils {
-    // Cria um Scanner para usar nos métodos da classe
     private static Scanner sc = new Scanner(System.in);
 
-    public static String lerString(String mensagem) {
-        // Exibe a mensagem passada
-        System.out.print(mensagem);
-        // Retorna a linha digitada pelo usuário
+    public static String lerString(String msg) {
+        System.out.print(msg);
         return sc.nextLine();
     }
 
-    
-    public static double lerDouble(String mensagem) {
-        double valor = 0;
+    public static int lerInt(String msg) {
+        int numero = -1;
         boolean valido = false;
-
-        // Repete até usuáriio digitar valor válido
-        do {
+        while (!valido) {
+            System.out.print(msg);
             try {
-                // Exibe a mensagem e tenta converter a entrada para double
-                System.out.print(mensagem);
-                valor = Double.parseDouble(sc.nextLine());
+                numero = Integer.parseInt(sc.nextLine());
                 valido = true;
             } catch (NumberFormatException e) {
-                // se a entrada não for um número xibe uma mensagem de erro
-                System.out.println("Valor inválido. Digite um número.");
+                System.out.println("❌ Entrada inválida. Digite um número inteiro.");
             }
-        } while (!valido); //repete ate ser válido
-
-        
-        return valor;
+        }
+        return numero;
     }
 }

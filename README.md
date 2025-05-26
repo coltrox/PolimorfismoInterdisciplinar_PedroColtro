@@ -1,12 +1,12 @@
 # 🌍 Projeto Educacional Multidisciplinar
 
-Este projeto foi desenvolvido com o objetivo de aplicar conceitos de **programação orientada a objetos (POO)** de forma multidisciplinar, abordando temas das áreas de **Geografia**, **Matemática** e **Ciências** por meio da modelagem e manipulação de objetos Java.
+Este projeto foi desenvolvido com o objetivo de aplicar conceitos de **programação orientada a objetos (POO)** de forma multidisciplinar, abordando temas das áreas de **Geografia**, **História** e **Biologia** por meio da modelagem e manipulação de objetos Java.
 
 ## 🧠 Temas Abordados
 
-- **Geografia**: Representação de biomas com suas características e climas.
-- **Matemática**: Cálculo da área de figuras geométricas como quadrado, triângulo e círculo.
-- **Ciências**: Estados físicos da matéria (sólido, líquido e gasoso), suas propriedades e exemplos.
+- **Geografia**: Explicação Guerra Fria.
+- **História**: Explicação Revolução Francesa.
+- **Ciências**: Descrição macromoléculas.
 
 ## 🧱 Estrutura e Modelagem
 
@@ -15,36 +15,37 @@ O projeto é dividido em pacotes organizados conforme o tema:
 src/<br>
 ├──  app/  Classe Main (menu principal) <br>
 ├──  model/<br>
-│  ├──   bioma/  Classes Bioma, Floresta, Tundra, Deserto <br>
-│  ├──   geometria/  Classes FiguraGeometrica, Quadrado, Triangulo, Circulo <br>
-│  └──   estado_materia/  Classes EstadoMateria, Solido, Liquido, Gasoso <br>
+│  ├──   geopolitica/  Classes Blocos, Causas, ConsequenciasGF, GuerraFria <br>
+│  ├──   macromoleculas/  Classes AcidosNucleicos, Carboidratos, Lipidios, MacroMoleculas, Proteinas <br>
+│  └──   revolucaofrancesa/  Classes RevolucaoFrancesa, Causa, ConsequenciasRF, QuedaBastilha, RevolucaoFrancesa <br>
 └──   util/  Classe Utils para entrada do usuário <br>
 
 
-### 🧭 Pacote `model.bioma`
+### 🧭 Pacote `model.geopolitica`
 
-Contém a classe abstrata `Bioma` e suas subclasses:
-- `Floresta`
-- `Tundra`
-- `Deserto`
+Contém a classe abstrata `GuerraFria` e suas subclasses:
+- `Blocos`
+- `Causas`
+- `ConsequenciasGF`
 
 Cada bioma possui descrição e informações sobre o clima, com uso de polimorfismo.
 
-### 📐 Pacote `model.geometria`
+### 🧬 Pacote `model.macromoleculas`
 
-Contém a classe abstrata `FiguraGeometrica` e subclasses:
-- `Quadrado`
-- `Triangulo`
-- `Circulo`
+Contém a classe abstrata `MacroMoleculas` e subclasses:
+- `AcidosNucleicos`
+- `Carboidratos`
+- `Lipidios`
+- `Proteinas`
 
 Cada figura implementa o cálculo de área e fornece uma descrição.
 
-### 🔬 Pacote `model.estado_materia`
+### 🔬 Pacote `model.revolucaofrancesa`
 
-Classe abstrata `EstadoMateria` e subclasses:
-- `Solido`
-- `Liquido`
-- `Gasoso`
+Classe abstrata `RevolucaoFrancesa` e subclasses:
+- `Causa`
+- `ConsequenciasRF`
+- `QuedaBastilha`
 
 Cada classe define as características físicas e dá um exemplo.
 
@@ -73,13 +74,6 @@ Compilar os arquivos (caso esteja no terminal):
 
 Navegar pelo menu interativo para criar objetos dos diferentes temas.
 <br><br>
-## 💡 Exemplos de Uso
-
-Escolher um bioma e ver a descrição e o clima.
-
-Calcular a área de figuras com valores inseridos pelo usuário.
-
-Explorar os três estados da matéria com exemplos práticos.
 
 ## 📚 Conceitos Aplicados
 Herança e polimorfismo

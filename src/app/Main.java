@@ -1,113 +1,131 @@
 package app;
 
-// Importa todas as classes necessárias
-import model.bioma.*;
-import model.geometria.*;
-import model.estado_materia.*;
+import model.geopolitica.*;
+import model.revolucaofrancesa.*;
+import model.macromoleculas.*;
 import util.Utils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Lista para armazenar todos os objetos
-        List<Object> objetos = new ArrayList<>();
-        String opcao;
+        boolean continuar = true;
 
-        
-        do {
-            // Exibe o menu principal
-            System.out.println("\n===== Menu Principal =====");
-            System.out.println("1 - Biomas (Geografia)");
-            System.out.println("2 - Figuras Geométricas (Matemática)");
-            System.out.println("3 - Estados da Matéria (Ciências)");
+        while (continuar) {
+            System.out.println("\n=== MENU PRINCIPAL ===");
+            System.out.println("Escolha a matéria:");
+            System.out.println("1 - Revolução Francesa (História)");
+            System.out.println("2 - Guerra Fria (Geografia)");
+            System.out.println("3 - Macromoléculas (Biologia)");
             System.out.println("0 - Sair");
-            opcao = Utils.lerString("Escolha uma opção: ");
+            int opcao = Utils.lerInt(">>> ");
 
-            // opção escolhida
             switch (opcao) {
-                case "1":
-                    // Usuário escolheu Biomas
-                    Bioma bioma = escolherBioma();
-                    bioma.descricao();
-                    bioma.clima();
-                    objetos.add(bioma); // Armazena o objeto na lista
+                case 1:
+                    menuHistoria();
                     break;
-                case "2":
-                    // Usuário escolheu Figuras Geométricas
-                    FiguraGeometrica figura = escolherFigura();
-                    figura.descricao();
-                    System.out.println("Área: " + figura.calcularArea());
-                    objetos.add(figura); // Armazena o objeto na lista
+                case 2:
+                    menuGeografia();
                     break;
-                case "3":
-                    // Usuário escolheu Estados da Matéria
-                    EstadoMateria estado = escolherEstado();
-                    estado.caracteristicas();
-                    estado.exemplo();
-                    objetos.add(estado); // Armazena o objeto na lista
+                case 3:
+                    menuBiologia();
                     break;
-                case "0":
-                    // Finaliza o programa
+                case 0:
+                    continuar = false;
                     System.out.println("Saindo...");
                     break;
                 default:
-                    // Entrada inválida
-                    System.out.println("Opção inválida.");
+                    System.out.println("❌ Opção inválida. Tente novamente.");
             }
-
-        } while (!opcao.equals("0")); // Repete até o usuário escolher sair
-
-        // Exibe os tipos dos objetos criados durante a execução
-        System.out.println("\n=== Objetos Criados ===");
-        objetos.forEach(obj -> System.out.println(obj.getClass().getSimpleName()));
-    }
-
-    // criar e retornar um bioma com base na entrada do usuário
-    public static Bioma escolherBioma() {
-        String tipo = Utils.lerString("Digite o tipo (floresta, tundra, deserto): ").toLowerCase();
-        String pais = Utils.lerString("Digite o país do bioma: ");
-        switch (tipo) {
-            case "floresta": return new Floresta("Floresta", pais);
-            case "tundra": return new Tundra("Tundra", pais);
-            case "deserto": return new Deserto("Deserto", pais);
-            default:
-                System.out.println("Bioma inválido. Criando Floresta por padrão.");
-                return new Floresta("Floresta", pais);
         }
     }
 
-    // criar e retornar uma figura geométrica com base na entrada
-    public static FiguraGeometrica escolherFigura() {
-        String tipo = Utils.lerString("Digite a figura (quadrado, triangulo, circulo): ").toLowerCase();
-        switch (tipo) {
-            case "quadrado":
-                double lado = Utils.lerDouble("Digite o lado do quadrado: ");
-                return new Quadrado(lado);
-            case "triangulo":
-                double base = Utils.lerDouble("Digite a base: ");
-                double altura = Utils.lerDouble("Digite a altura: ");
-                return new Triangulo(base, altura);
-            case "circulo":
-                double raio = Utils.lerDouble("Digite o raio: ");
-                return new Circulo(raio);
-            default:
-                System.out.println("Figura inválida. Criando Quadrado por padrão.");
-                return new Quadrado(1);
+    public static void menuHistoria() {
+        boolean repetir = true;
+        while (repetir) {
+            System.out.println("\n=== História - Revolução Francesa ===");
+            System.out.println("Escolha o conteúdo: (Digite: Causa | Queda | Consequencias | Voltar)");
+            String escolha = Utils.lerString(">>> ").toLowerCase();
+
+            switch (escolha) {
+                case "causa":
+                    RevolucaoFrancesa causa = new Causa();
+                    causa.explicar();
+                    break;
+                case "queda":
+                    RevolucaoFrancesa queda = new QuedaBastilha();
+                    queda.explicar();
+                    break;
+                case "consequencias":
+                    RevolucaoFrancesa cons = new ConsequenciasRF();
+                    cons.explicar();
+                    break;
+                case "voltar":
+                    repetir = false;
+                    break;
+                default:
+                    System.out.println("❌ Conteúdo inválido. Tente novamente.");
+            }
         }
     }
 
-    // criar e retornar um estado da matéria com base na entrada
-    public static EstadoMateria escolherEstado() {
-        String tipo = Utils.lerString("Digite o estado (solido, liquido, gasoso): ").toLowerCase();
-        switch (tipo) {
-            case "solido": return new Solido();
-            case "liquido": return new Liquido();
-            case "gasoso": return new Gasoso();
-            default:
-                System.out.println("Estado inválido. Criando Sólido por padrão.");
-                return new Solido();
+    public static void menuGeografia() {
+        boolean repetir = true;
+        while (repetir) {
+            System.out.println("\n=== Geografia - Guerra Fria ===");
+            System.out.println("Escolha o conteúdo: (Digite: Causas | Blocos | Consequencias | Voltar)");
+            String escolha = Utils.lerString(">>> ").toLowerCase();
+
+            switch (escolha) {
+                case "causas":
+                    GuerraFria causas = new Causas();
+                    causas.explicar();
+                    break;
+                case "blocos":
+                    GuerraFria blocos = new Blocos();
+                    blocos.explicar();
+                    break;
+                case "consequencias":
+                    GuerraFria cons = new ConsequenciasGF();
+                    cons.explicar();
+                    break;
+                case "voltar":
+                    repetir = false;
+                    break;
+                default:
+                    System.out.println("❌ Conteúdo inválido. Tente novamente.");
+            }
+        }
+    }
+
+    public static void menuBiologia() {
+        boolean repetir = true;
+        while (repetir) {
+            System.out.println("\n=== Biologia - Macromoléculas ===");
+            System.out.println("Escolha o conteúdo: (Digite: Carboidratos | Lipidios | Proteinas | Acidos | Voltar)");
+            String escolha = Utils.lerString(">>> ").toLowerCase();
+
+            switch (escolha) {
+                case "carboidratos":
+                    MacroMoleculas carb = new Carboidratos();
+                    carb.descrever();
+                    break;
+                case "lipidios":
+                    MacroMoleculas lip = new Lipidios();
+                    lip.descrever();
+                    break;
+                case "proteinas":
+                    MacroMoleculas prot = new Proteinas();
+                    prot.descrever();
+                    break;
+                case "acidos":
+                    MacroMoleculas acido = new AcidosNucleicos();
+                    acido.descrever();
+                    break;
+                case "voltar":
+                    repetir = false;
+                    break;
+                default:
+                    System.out.println("❌ Conteúdo inválido. Tente novamente.");
+            }
         }
     }
 }
