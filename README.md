@@ -40,7 +40,7 @@ Contém a classe abstrata `MacroMoleculas` e subclasses:
 
 Cada figura implementa o cálculo de área e fornece uma descrição.
 
-### 🔬 Pacote `model.revolucaofrancesa`
+### 🗺️ Pacote `model.revolucaofrancesa`
 
 Classe abstrata `RevolucaoFrancesa` e subclasses:
 - `Causa`
