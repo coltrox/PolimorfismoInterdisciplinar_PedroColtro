@@ -9,8 +9,9 @@ public class Main {
     public static void main(String[] args) {
         boolean continuar = true;
 
+        //Menu
         while (continuar) {
-            System.out.println("\n=== MENU PRINCIPAL ===");
+            System.out.println("\n=== MENU PRINCIPAL ==="); 
             System.out.println("Escolha a matéria:");
             System.out.println("1 - Revolução Francesa (História)");
             System.out.println("2 - Guerra Fria (Geografia)");
@@ -18,9 +19,10 @@ public class Main {
             System.out.println("0 - Sair");
             int opcao = Utils.lerInt(">>> ");
 
+            //Opções
             switch (opcao) {
                 case 1:
-                    menuHistoria();
+                    menuHistoria(); 
                     break;
                 case 2:
                     menuGeografia();
@@ -37,7 +39,7 @@ public class Main {
             }
         }
     }
-
+         //Menu de História
     public static void menuHistoria() {
         boolean repetir = true;
         while (repetir) {
@@ -66,7 +68,7 @@ public class Main {
             }
         }
     }
-
+            //Menu de geografia
     public static void menuGeografia() {
         boolean repetir = true;
         while (repetir) {
@@ -95,7 +97,7 @@ public class Main {
             }
         }
     }
-
+            //Menu de biologia
     public static void menuBiologia() {
         boolean repetir = true;
         while (repetir) {
