@@ -64,7 +64,7 @@ public class Main {
                     repetir = false;
                     break;
                 default:
-                    System.out.println("❌ Conteúdo inválido. Tente novamente.");
+                    System.out.println(" Conteúdo inválido. Tente novamente.");
             }
         }
     }
@@ -93,7 +93,7 @@ public class Main {
                     repetir = false;
                     break;
                 default:
-                    System.out.println("❌ Conteúdo inválido. Tente novamente.");
+                    System.out.println(" Conteúdo inválido. Tente novamente.");
             }
         }
     }
@@ -126,7 +126,7 @@ public class Main {
                     repetir = false;
                     break;
                 default:
-                    System.out.println("❌ Conteúdo inválido. Tente novamente.");
+                    System.out.println(" Conteúdo inválido. Tente novamente.");
             }
         }
     }

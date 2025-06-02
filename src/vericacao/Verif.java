@@ -20,7 +20,7 @@ public class Verif {
                 numero = Integer.parseInt(sc.nextLine());
                 valido = true;     // Marca como válido se não der exceção
             } catch (NumberFormatException e) {
-                System.out.println("❌ Entrada inválida. Digite um número inteiro.");
+                System.out.println(" Entrada inválida. Digite um número inteiro.");
             }
         }
         return numero;
