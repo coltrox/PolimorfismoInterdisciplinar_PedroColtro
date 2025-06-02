@@ -1,11 +1,9 @@
-//Declaração da localização
-package util;
+package vericacao;
 
 // Importação da classe Scanner para entrada de dados via console
 import java.util.Scanner;
 
-// Importação da classe Scanner para entrada de dados via console
-public class Utils {
+public class Verif {
     private static Scanner sc = new Scanner(System.in);
 
     public static String lerString(String msg) {

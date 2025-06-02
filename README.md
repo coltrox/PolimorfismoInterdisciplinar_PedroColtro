@@ -18,7 +18,7 @@ src/<br>
 │  ├──   geopolitica/  Classes Blocos, Causas, ConsequenciasGF, GuerraFria <br>
 │  ├──   macromoleculas/  Classes AcidosNucleicos, Carboidratos, Lipidios, MacroMoleculas, Proteinas <br>
 │  └──   revolucaofrancesa/  Classes RevolucaoFrancesa, Causa, ConsequenciasRF, QuedaBastilha, RevolucaoFrancesa <br>
-└──   util/  Classe Utils para entrada do usuário <br>
+└──   verificacao/  Classe Verif para entrada do usuário <br>
 
 
 ### 🧭 Pacote `model.geopolitica`
@@ -49,9 +49,9 @@ Classe abstrata `RevolucaoFrancesa` e subclasses:
 
 Cada classe define as características físicas e dá um exemplo.
 
-### 🛠 Pacote `util`
+### 🛠 Pacote `verificacao`
 
-A classe `Utils` facilita a leitura de entradas do usuário com tratamento de erros.
+A classe `Verif` facilita a leitura de entradas do usuário com tratamento de erros.
 
 ---
 

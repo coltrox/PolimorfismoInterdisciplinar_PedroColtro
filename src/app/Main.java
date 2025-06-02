@@ -1,9 +1,9 @@
 package app;
 
 import model.geopolitica.*;
-import model.revolucaofrancesa.*;
 import model.macromoleculas.*;
-import util.Utils;
+import model.revolucaofrancesa.*;
+import vericacao.Verif;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Main {
             System.out.println("2 - Guerra Fria (Geografia)");
             System.out.println("3 - Macromoléculas (Biologia)");
             System.out.println("0 - Sair");
-            int opcao = Utils.lerInt(">>> ");
+            int opcao = Verif.lerInt(">>> ");
 
             //Opções
             switch (opcao) {
@@ -45,7 +45,7 @@ public class Main {
         while (repetir) {
             System.out.println("\n=== História - Revolução Francesa ===");
             System.out.println("Escolha o conteúdo: (Digite: Causa | Queda | Consequencias | Voltar)");
-            String escolha = Utils.lerString(">>> ").toLowerCase();
+            String escolha = Verif.lerString(">>> ").toLowerCase();
 
             switch (escolha) {
                 case "causa":
@@ -74,7 +74,7 @@ public class Main {
         while (repetir) {
             System.out.println("\n=== Geografia - Guerra Fria ===");
             System.out.println("Escolha o conteúdo: (Digite: Causas | Blocos | Consequencias | Voltar)");
-            String escolha = Utils.lerString(">>> ").toLowerCase();
+            String escolha = Verif.lerString(">>> ").toLowerCase();
 
             switch (escolha) {
                 case "causas":
@@ -103,7 +103,7 @@ public class Main {
         while (repetir) {
             System.out.println("\n=== Biologia - Macromoléculas ===");
             System.out.println("Escolha o conteúdo: (Digite: Carboidratos | Lipidios | Proteinas | Acidos | Voltar)");
-            String escolha = Utils.lerString(">>> ").toLowerCase();
+            String escolha = Verif.lerString(">>> ").toLowerCase();
 
             switch (escolha) {
                 case "carboidratos":
